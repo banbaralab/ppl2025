@@ -12,7 +12,7 @@ from clingo import ast
 from clingo.application import clingo_main, Application, ApplicationOptions
 from clingo.control import Control
 
-from clingodl import ClingoDLTheory
+#from clingodl import ClingoDLTheory
 
 from solver import HeulingoConfig, LogLevel, print_warning
 from solver_lnps import SolverLNPS
