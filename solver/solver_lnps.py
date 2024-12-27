@@ -12,7 +12,7 @@ from typing import Optional
 from clingo.control import Control
 from clingo.symbol import Symbol, SymbolType, Function, Number, parse_term
 
-from clingodl import ClingoDLTheory
+# from clingodl import ClingoDLTheory
 
 from solver import *
 
@@ -22,7 +22,7 @@ LINE = "------------------------------------------------------------------------
 
 
 class SolverLNPS(Solver):
-    def __init__(self, ctl: Control, heulingo_config: HeulingoConfig, thy: Optional[ClingoDLTheory] = None):
+    def __init__(self, ctl: Control, heulingo_config: HeulingoConfig, thy=None):
         super().__init__(ctl, heulingo_config, thy)
         self.__lnps_config = []
         
