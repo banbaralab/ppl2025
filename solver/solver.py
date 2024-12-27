@@ -13,7 +13,7 @@ from enum import IntEnum
 from clingo.application import Flag
 from clingo.control import Control
 
-from clingodl import ClingoDLTheory
+#from clingodl import ClingoDLTheory
 
 class LogLevel(IntEnum):
     NONE = 0
@@ -187,14 +187,14 @@ class Solver(ABC):
     __model_last: Optional[str]
     __cost_last: list[Optional[int]]
     __variability: Optional[bool]
-    __thy: Optional[ClingoDLTheory]
+    # __thy: Optional[ClingoDLTheory]
     _heulingo_config: HeulingoConfig
     _ctl: Control
     _finished: bool
     _result: str
     _optimum: str
     
-    def __init__(self, ctl: Control, heulingo_config: HeulingoConfig, thy: Optional[ClingoDLTheory] = None):
+    def __init__(self, ctl: Control, heulingo_config: HeulingoConfig, thy=None):
         self.__model_last = None
         self.__cost_last = [None]
         self.__variability = None
