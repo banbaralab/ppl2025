@@ -2,6 +2,10 @@
 
 ## 動作環境
 - [clingo](https://potassco.org/clingo/) version 5.6以上
+- clingo-dlが無い場合はインストール
+```
+conda install -c conda-forge clingo-dl
+```
 
 ## 実行例(clingo)
 
